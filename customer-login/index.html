@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="panel panel--brand">
+      <div class="panel-content">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <h1 class="panel-title">Welcome back</h1>
+        <p class="panel-text">Sign in to your account to continue.</p>
+        <div class="panel-decoration"></div>
+      </div>
+    </aside>
+    <main class="panel panel--form">
+      <div class="form-wrapper">
+        <header class="form-header">
+          <h2 class="form-title">Sign in</h2>
+          <p class="form-subtitle">Enter your credentials to access your account.</p>
+        </header>
+        <form class="login-form" id="loginForm" novalidate>
+          <div class="field">
+            <label class="field-label" for="email">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="field-input"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            >
+            <span class="field-error" id="emailError" role="alert"></span>
+          </div>
+          <div class="field">
+            <div class="field-label-row">
+              <label class="field-label" for="password">Password</label>
+              <a href="#" class="link link--small">Forgot password?</a>
+            </div>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="field-input"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              required
+            >
+            <span class="field-error" id="passwordError" role="alert"></span>
+          </div>
+          <div class="field field--checkbox">
+            <input type="checkbox" id="remember" name="remember" class="field-checkbox">
+            <label class="field-label field-label--inline" for="remember">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn--primary" id="submitBtn">Sign in</button>
+        </form>
+        <p class="form-footer">
+          Don't have an account? <a href="#" class="link">Create account</a>
+        </p>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
