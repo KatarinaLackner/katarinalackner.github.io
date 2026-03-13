@@ -1,0 +1,21 @@
+{
+  "name": "@workspace/one-design-system",
+  "version": "1.0.0",
+  "description": "One Design System showcase page package",
+  "type": "module",
+  "main": "./index.tsx",
+  "exports": {
+    ".": "./index.tsx",
+    "./*": "./*"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@angi/one-design-system": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.4"
+  }
+}

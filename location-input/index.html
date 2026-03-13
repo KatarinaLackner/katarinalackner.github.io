@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compare quotes from top-rated Electricians | Angi</title>
+  <!-- One Design System: tokens and reset -->
+  <link rel="stylesheet" href="../one-design-system/node_modules/@angi/one-design-system/dist/tokens/css/angi.css" />
+  <link rel="stylesheet" href="../one-design-system/node_modules/@angi/one-design-system/dist/css-reset/globalReset.css" />
+  <!-- One Design System: components -->
+  <link rel="stylesheet" href="../one-design-system/node_modules/@angi/one-design-system/dist/components/es/assets/Input.css" />
+  <link rel="stylesheet" href="../one-design-system/node_modules/@angi/one-design-system/dist/components/es/assets/Button.css" />
+  <link rel="stylesheet" href="../one-design-system/node_modules/@angi/one-design-system/dist/components/es/assets/Label.css" />
+  <link rel="stylesheet" href="../one-design-system/node_modules/@angi/one-design-system/dist/components/es/assets/Hint.css" />
+  <link rel="stylesheet" href="../one-design-system/node_modules/@angi/one-design-system/dist/components/es/assets/Text.css.ts.css" />
+  <link rel="stylesheet" href="../one-design-system/node_modules/@angi/one-design-system/dist/components/es/assets/Icon.css" />
+  <style>
+    .page {
+      min-height: 100vh;
+      background: var(--color-bg-page-default);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: var(--spacing-24) var(--spacing-16);
+    }
+    .header {
+      width: 100%;
+      max-width: 28rem;
+      margin-bottom: var(--spacing-32);
+    }
+    .progress-bar {
+      width: 4.5rem;
+      height: 0.25rem;
+      background: var(--color-bg-primary-solid-default);
+      border-radius: var(--border-radius-full);
+      margin-top: var(--spacing-8);
+    }
+    .logo {
+      font-family: var(--font-family-heading);
+      font-weight: var(--font-weight-heading);
+      font-size: var(--font-size-2xl);
+      color: var(--color-angi-heart-500);
+      letter-spacing: var(--font-letter-spacing-tight);
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 28rem;
+      width: 100%;
+    }
+    .title-line1 {
+      font-family: var(--text-heading-3xl-font-family);
+      font-size: var(--text-heading-3xl-font-size);
+      font-weight: var(--text-heading-3xl-font-weight);
+      line-height: var(--text-heading-3xl-line-height);
+      letter-spacing: var(--text-heading-3xl-letter-spacing);
+      color: var(--color-text-neutral-default);
+      margin: 0;
+    }
+    .title-line2 {
+      font-family: var(--text-heading-4xl-font-family);
+      font-size: var(--text-heading-4xl-font-size);
+      font-weight: var(--text-heading-4xl-font-weight);
+      line-height: var(--text-heading-4xl-line-height);
+      letter-spacing: var(--text-heading-4xl-letter-spacing);
+      color: var(--color-text-neutral-default);
+      margin: 0 0 0 0;
+    }
+    .instruction {
+      font-family: var(--text-body-base-normal-font-family);
+      font-size: var(--text-body-base-normal-font-size);
+      font-weight: var(--text-body-base-normal-font-weight);
+      color: var(--color-text-neutral-default);
+      margin: var(--spacing-16) 0 var(--spacing-24);
+    }
+    .input-row {
+      display: flex;
+      align-items: stretch;
+      gap: var(--spacing-8);
+      width: 100%;
+      margin-bottom: var(--spacing-8);
+    }
+    .input-wrapper {
+      flex: 1;
+      min-width: 0;
+    }
+    .input-wrapper ._1c8myl61 {
+      position: relative;
+    }
+    .zip-label {
+      position: absolute;
+      left: var(--spacing-12);
+      top: var(--spacing-8);
+      font-family: var(--font-family-body);
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-body);
+      color: var(--color-text-neutral-placeholder);
+      pointer-events: none;
+    }
+    .location-display {
+      display: block;
+      font-family: var(--font-family-body);
+      font-size: var(--font-size-base);
+      font-weight: var(--font-weight-body);
+      color: var(--color-angi-spring-600);
+      line-height: 1.25;
+      margin-top: var(--spacing-4);
+      text-align: left;
+    }
+    .next-wrap {
+      width: 100%;
+      margin-top: var(--spacing-24);
+    }
+    .location-btn {
+      border: 1px solid var(--color-border-neutral-solid-default);
+      background: var(--color-bg-base-default);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="logo">Angi</div>
+      <div class="progress-bar" role="presentation" aria-hidden="true"></div>
+    </header>
+
+    <main class="main">
+      <h1 class="title-line1">Compare quotes from top-rated</h1>
+      <h2 class="title-line2">Electricians</h2>
+      <p class="instruction">Enter the location of your project</p>
+
+      <div class="input-row">
+        <div class="input-wrapper">
+          <div class="_1c8myl60">
+            <div class="_1c8myl61 _1c8myl63" data-validation="valid">
+              <span class="zip-label _1w8ocpw0 _1w8ocpw2" id="zip-label">ZIP code</span>
+              <input
+                class="_1c8myl68"
+                type="text"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                maxlength="5"
+                autocomplete="postal-code"
+                aria-labelledby="zip-label"
+                value="05401"
+                placeholder=" "
+              />
+              <div class="_1c8myl69">
+                <span class="_1c8myl6a _1dy6irq0 _1dy6irq2" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8" cy="8" r="6" fill="var(--color-bg-success-subtle-default)" stroke="var(--color-border-success-solid-default)" stroke-width="1.5"/>
+                    <path d="M5.5 8l2 2 3-4" stroke="var(--color-icon-success-default)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <button type="button" class="hofjdi1 hofjdim hofjdig location-btn _1c8myl6b" aria-label="Use current location">
+                  <span class="_1dy6irq0 _1dy6irq2" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="8" cy="8" r="2" fill="currentColor"/>
+                      <circle cx="8" cy="8" r="5" stroke="currentColor" stroke-width="1.5"/>
+                      <path d="M8 2v1M8 13v1M2 8h1M13 8h1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="location-display _1k7jccf0">Burlington, VT</span>
+
+      <div class="next-wrap">
+        <button type="button" class="hofjdi1 hofjdia hofjdih" style="width: 100%;">Next</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
